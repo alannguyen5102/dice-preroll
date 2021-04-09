@@ -12,4 +12,10 @@ export class DiceCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  rollDice(die: number) {
+    let rollResult = Math.floor(Math.random() * die) + 1;
+    console.log(rollResult);
+    return rollResult;
+  }
+
 }
