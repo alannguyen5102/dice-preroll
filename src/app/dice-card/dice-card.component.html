@@ -1,28 +1,7 @@
 <mat-card class="dice-card">
-    <button class="roll-button" (click)="rollDice(100);" mat-fab>100</button>
-    <button mat-mini-fab color="primary">99</button>
-</mat-card>
-
-<mat-card class="dice-card">
-    <button class="roll-button" (click)="rollDice(20);" mat-fab>20</button>
-</mat-card>
-
-<mat-card class="dice-card">
-    <button class="roll-button" (click)="rollDice(12);" mat-fab>12</button>
-</mat-card>
-
-<mat-card class="dice-card">
-    <button class="roll-button" (click)="rollDice(10);" mat-fab>10</button>
-</mat-card>
-
-<mat-card class="dice-card">
-    <button class="roll-button" (click)="rollDice(8);" mat-fab>8</button>
-</mat-card>
-
-<mat-card class="dice-card">
-    <button class="roll-button" (click)="rollDice(6);" mat-fab>6</button>
-</mat-card>
-
-<mat-card class="dice-card">
-    <button class="roll-button" (click)="rollDice(4);" mat-fab>4</button>
+    <button class="roll-button" (click)="createComponent(rollDice(dieType));" mat-fab>{{ dieType }}</button>
+    <div>
+        <ng-template #viewContainerRef></ng-template>
+    </div>
+    <!-- <button mat-mini-fab color="primary">99</button> -->
 </mat-card>
