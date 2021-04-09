@@ -9,6 +9,7 @@ import { DiceCardComponent } from './dice-card/dice-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { RollCardComponent } from './roll-card/roll-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,12 +17,16 @@ import { RollCardComponent } from './roll-card/roll-card.component';
     DiceCardComponent,
     RollCardComponent
   ],
+  entryComponents: [
+    RollCardComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

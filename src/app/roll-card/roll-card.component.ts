@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ComponentRef  } from '@angular/core';
 import { DiceCardComponent } from '../dice-card/dice-card.component';
 
 @Component({
@@ -18,7 +18,6 @@ export class RollCardComponent {
   }
 
   remove_me() {
-    console.log("key: " + this.unique_key)
-    this.parentRef.remove(this.unique_key)
+    this.parentRef.remove(this.unique_key);
   }
 }

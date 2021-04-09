@@ -1,6 +1,7 @@
 <mat-card class="dice-card">
-    <button class="roll-button" (click)="createComponent(rollDice(dieType));" mat-fab>{{ dieType }}</button>
+    
     <div>
+        <button class="roll-button" color="primary" (click)="createComponent(rollDice(dieType));" mat-fab>{{ dieType }}</button>
         <ng-template #viewContainerRef></ng-template>
     </div>
     <!-- <button mat-mini-fab color="primary">99</button> -->
