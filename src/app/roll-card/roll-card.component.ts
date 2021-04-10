@@ -11,10 +11,19 @@ export class RollCardComponent {
   public unique_key: number;
   public parentRef: DiceCardComponent;
   public rollResult: number;
+  public rollCrit: number;
+  public rollColor: string;
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
+    if (this.rollResult === this.rollCrit && this.rollCrit === 20) {
+      this.rollColor = 'warn';
+    }
+    else {
+      this.rollColor = 'accent';
+    }
   }
 
   remove_me() {

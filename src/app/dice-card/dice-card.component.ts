@@ -33,6 +33,7 @@ export class DiceCardComponent {
     childComponent.unique_key = ++this.child_unique_key;
     childComponent.parentRef = this;
     childComponent.rollResult = result;
+    childComponent.rollCrit = this.dieType;
 
     // add reference for newly created component
     this.componentsReferences.push(childComponentRef);
