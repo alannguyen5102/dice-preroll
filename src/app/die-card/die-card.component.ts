@@ -10,11 +10,11 @@ import {
 import { RollCardComponent } from '../roll-card/roll-card.component';
 
 @Component({
-  selector: 'app-dice-card',
-  templateUrl: './dice-card.component.html',
-  styleUrls: ['./dice-card.component.scss']
+  selector: 'app-die-card',
+  templateUrl: './die-card.component.html',
+  styleUrls: ['./die-card.component.scss']
 })
-export class DiceCardComponent {
+export class DieCardComponent {
   @Input() public dieType: number;
   @ViewChild("viewContainerRef", { read: ViewContainerRef })
   VCR: ViewContainerRef;

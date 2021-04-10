@@ -1,19 +1,11 @@
-<p>
-  <mat-toolbar color="primary">
-    <span>Dice Roller</span>
-    <app-auto-buttons></app-auto-buttons>
-  </mat-toolbar>
-</p>
+<mat-tab-group>
+  <mat-tab label="Dice Preroller">
+    <app-preroller></app-preroller>
+  </mat-tab>
+  <mat-tab label="Dice Roller">
 
-<app-dice-card [dieType]="100"></app-dice-card>
-<app-dice-card [dieType]="20"></app-dice-card>
-<app-dice-card [dieType]="12"></app-dice-card>
-<app-dice-card [dieType]="10"></app-dice-card>
-<app-dice-card [dieType]="8"></app-dice-card>
-<app-dice-card [dieType]="6"></app-dice-card>
-<app-dice-card [dieType]="4"></app-dice-card>
-<app-dice-card [dieType]="3"></app-dice-card>
-<app-dice-card [dieType]="2"></app-dice-card>
+  </mat-tab>
+</mat-tab-group>
 
 
 

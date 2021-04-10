@@ -4,22 +4,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DiceCardComponent } from './dice-card/dice-card.component';
+import { DieCardComponent } from './die-card/die-card.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+
+import { MatTabsModule } from '@angular/material/tabs';
+
 import { RollCardComponent } from './roll-card/roll-card.component';
 import { FormsModule } from '@angular/forms';
 import { AutoButtonsComponent } from './auto-buttons/auto-buttons.component';
+import { PrerollerComponent } from './preroller/preroller.component';
+import { RollerComponent } from './roller/roller.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DiceCardComponent,
+    DieCardComponent,
     RollCardComponent,
-    AutoButtonsComponent
+    AutoButtonsComponent,
+    PrerollerComponent,
+    RollerComponent,
   ],
   entryComponents: [
     RollCardComponent
@@ -32,6 +39,7 @@ import { AutoButtonsComponent } from './auto-buttons/auto-buttons.component';
     MatButtonModule,
     MatIconModule, 
     MatToolbarModule,
+    MatTabsModule,
     FormsModule
   ],
   providers: [],

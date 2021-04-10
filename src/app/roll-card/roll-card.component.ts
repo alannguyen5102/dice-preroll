@@ -1,5 +1,5 @@
 import { Component, OnInit, ComponentRef  } from '@angular/core';
-import { DiceCardComponent } from '../dice-card/dice-card.component';
+import { DieCardComponent } from '../die-card/die-card.component';
 
 @Component({
   selector: 'app-roll-card',
@@ -9,7 +9,7 @@ import { DiceCardComponent } from '../dice-card/dice-card.component';
 export class RollCardComponent {
 
   public unique_key: number;
-  public parentRef: DiceCardComponent;
+  public parentRef: DieCardComponent;
   public rollResult: number;
   public rollCrit: number;
   public rollColor: string;
