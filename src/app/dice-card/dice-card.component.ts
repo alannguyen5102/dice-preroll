@@ -58,6 +58,10 @@ export class DiceCardComponent {
     );
   }
 
+  removeAll() {
+    this.VCR.clear();
+  }
+
   rollDice(die: number) {
     let rollResult = Math.floor(Math.random() * die) + 1;
     return rollResult;

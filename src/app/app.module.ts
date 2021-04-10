@@ -8,6 +8,7 @@ import { DiceCardComponent } from './dice-card/dice-card.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { RollCardComponent } from './roll-card/roll-card.component';
 import { FormsModule } from '@angular/forms';
 
@@ -26,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule, 
     FormsModule
   ],
   providers: [],
