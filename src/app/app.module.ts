@@ -18,6 +18,9 @@ import { FormsModule } from '@angular/forms';
 import { AutoButtonsComponent } from './auto-buttons/auto-buttons.component';
 import { PrerollerComponent } from './preroller/preroller.component';
 import { RollerComponent } from './roller/roller.component';
+import { ResultsCardComponent } from './roller-components/results-card/results-card.component';
+import { DiceSelectorComponent } from './roller-components/dice-selector/dice-selector.component';
+import { SingleDieComponent } from './roller-components/single-die/single-die.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { RollerComponent } from './roller/roller.component';
     AutoButtonsComponent,
     PrerollerComponent,
     RollerComponent,
+    ResultsCardComponent,
+    DiceSelectorComponent,
+    SingleDieComponent,
   ],
   entryComponents: [
     RollCardComponent
