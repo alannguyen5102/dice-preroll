@@ -19,6 +19,9 @@ export class RollCardComponent {
 
   ngOnInit(): void {
     if (this.rollResult === this.rollCrit && this.rollCrit === 20) {
+      this.rollColor = 'primary';
+    }
+    else if (this.rollResult === 1 && this.rollCrit === 20) {
       this.rollColor = 'warn';
     }
     else {
