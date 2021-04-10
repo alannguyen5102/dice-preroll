@@ -56,6 +56,9 @@ export class DiceCardComponent {
     this.componentsReferences = this.componentsReferences.filter(
       x => x.instance.unique_key !== key
     );
+
+    // let dieName: string = "d" + this.dieType;
+    // document.getElementById(dieName).click();
   }
 
   removeAll() {

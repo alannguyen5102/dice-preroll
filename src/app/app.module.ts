@@ -9,6 +9,7 @@ import { DiceCardComponent } from './dice-card/dice-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { RollCardComponent } from './roll-card/roll-card.component';
 import { FormsModule } from '@angular/forms';
 import { AutoButtonsComponent } from './auto-buttons/auto-buttons.component';
@@ -30,6 +31,7 @@ import { AutoButtonsComponent } from './auto-buttons/auto-buttons.component';
     MatCardModule,
     MatButtonModule,
     MatIconModule, 
+    MatToolbarModule,
     FormsModule
   ],
   providers: [],
