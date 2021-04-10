@@ -11,12 +11,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { RollCardComponent } from './roll-card/roll-card.component';
 import { FormsModule } from '@angular/forms';
+import { AutoButtonsComponent } from './auto-buttons/auto-buttons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DiceCardComponent,
-    RollCardComponent
+    RollCardComponent,
+    AutoButtonsComponent
   ],
   entryComponents: [
     RollCardComponent
