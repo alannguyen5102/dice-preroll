@@ -8,6 +8,7 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 export class SingleDieComponent implements OnInit {
 
   @Output() newRollEvent = new EventEmitter<number>();
+  @Output() newTypeEvent = new EventEmitter<string>();
 
   @Input() public dieType: number;
   constructor() { }
@@ -18,7 +19,7 @@ export class SingleDieComponent implements OnInit {
   rollSingleDie() {
   
     let rollResult: number = Math.floor(Math.random() * this.dieType) + 1;
-    console.log("Selected: " + rollResult);
     this.newRollEvent.emit(rollResult);
+    this.newTypeEvent.emit("d" + this.dieType);
   }
 }

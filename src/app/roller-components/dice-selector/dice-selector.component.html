@@ -3,20 +3,23 @@
         <mat-card-title>
             Dice Roller
         </mat-card-title>
+        <mat-card-subtitle>
+            <p>{{ results }} = {{ diceString }}</p>
+        </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-        test
+        <button class="roll-result" mat-fab color="accent">{{ currentRoll }}</button>
     </mat-card-content>
     <mat-card-actions>
-        <app-single-die [dieType]="100"></app-single-die>
-        <app-single-die [dieType]="20"></app-single-die>
-        <app-single-die [dieType]="12"></app-single-die>
-        <app-single-die [dieType]="10"></app-single-die>
-        <app-single-die [dieType]="8"></app-single-die>
-        <app-single-die [dieType]="6"></app-single-die>
-        <app-single-die [dieType]="4"></app-single-die>
-        <app-single-die [dieType]="3"></app-single-die>
-        <app-single-die [dieType]="2"></app-single-die>
+        <app-single-die (newRollEvent)="rolledSingleDie($event)" (newTypeEvent)="typeSingleDie($event)" [dieType]="100"></app-single-die>
+        <app-single-die (newRollEvent)="rolledSingleDie($event)" (newTypeEvent)="typeSingleDie($event)" [dieType]="20"></app-single-die>
+        <app-single-die (newRollEvent)="rolledSingleDie($event)" (newTypeEvent)="typeSingleDie($event)" [dieType]="12"></app-single-die>
+        <app-single-die (newRollEvent)="rolledSingleDie($event)" (newTypeEvent)="typeSingleDie($event)" [dieType]="10"></app-single-die>
+        <app-single-die (newRollEvent)="rolledSingleDie($event)" (newTypeEvent)="typeSingleDie($event)" [dieType]="8"></app-single-die>
+        <app-single-die (newRollEvent)="rolledSingleDie($event)" (newTypeEvent)="typeSingleDie($event)" [dieType]="6"></app-single-die>
+        <app-single-die (newRollEvent)="rolledSingleDie($event)" (newTypeEvent)="typeSingleDie($event)" [dieType]="4"></app-single-die>
+        <app-single-die (newRollEvent)="rolledSingleDie($event)" (newTypeEvent)="typeSingleDie($event)" [dieType]="3"></app-single-die>
+        <app-single-die (newRollEvent)="rolledSingleDie($event)" (newTypeEvent)="typeSingleDie($event)" [dieType]="2"></app-single-die>
     </mat-card-actions>
 
 </mat-card>
