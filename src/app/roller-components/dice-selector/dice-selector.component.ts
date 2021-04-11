@@ -28,6 +28,23 @@ export class DiceSelectorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  clearDiceRoller() {
+    this.results = 0;
+    this.currentRoll = 0;
+    this.d100 = 0;
+    this.d20 = 0;
+    this.d12 = 0;
+
+    this.d10 = 0;
+    this.d8 = 0;
+    this.d6 = 0;
+
+    this.d4 = 0;
+    this.d3 = 0;
+    this.d2 = 0;
+
+    this.diceString = " ";
+  }
   rolledSingleDie(result: number) {
     this.currentRoll = result;
     this.results += result;
